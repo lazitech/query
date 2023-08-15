@@ -1,0 +1,148 @@
+<html style="font-size: 100px;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>
+        山东省2024年普通高考成绩查询
+    </title>
+    <meta name="Keywords" content="山东省2024年夏季高考成绩查询">
+    <meta name="description" content="山东省2024年夏季高考成绩查询">
+    <link href="index.css" rel="stylesheet" type="text/css">
+
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <form method="post" action="shouye.html" id="form1">
+        <div class="top_SS">
+            <span>山东省2024年夏季高考成绩查询</span>
+        </div>
+
+        <div id="Panel1">
+
+            <div class="conten_box">
+
+                <div class="formBox">
+                    <div class="form-item">
+                        <label for="">考生号</label>
+                        <div class="last">
+                            <input name="tbksh" type="text" maxlength="14" id="tbksh" placeholder="输入考生号"
+                                autocomplete="off">
+                            <span id="RequiredFieldValidator5"
+                                style="color:Red;font-size:12pt;display:none;">*请输入考生号</span>
+                            <span id="RegularExpressionValidator1"
+                                style="color:Red;font-size:12pt;display:none;">*考生号有误</span>
+                        </div>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="">证件号后四位</label>
+                        <div class="last">
+                            <input name="tbzjh" type="text" maxlength="4" id="tbzjh" placeholder="输入证件号后四位"
+                                autocomplete="off">
+                            <span id="RequiredFieldValidator3"
+                                style="color:Red;font-size:12pt;display:none;">*请输入证件号后四位</span>
+                            <span id="RegularExpressionValidator2"
+                                style="color:Red;font-size:12pt;display:none;">*证件号后四位有误</span>
+                        </div>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="">手机短信密码</label>
+                        <div class="last">
+                            <input name="tbsjdxmm" type="password" maxlength="10" id="tbsjdxmm" placeholder="输入手机短信密码"
+                                autocomplete="off">
+                            <span id="RequiredFieldValidator1"
+                                style="color:Red;font-size:12pt;display:none;">*请输入手机短信密码</span>
+                            <span id="RegularExpressionValidator3"
+                                style="color:Red;font-size:12pt;display:none;">*手机短信密码有误</span>
+                        </div>
+                    </div>
+
+                    <div class="form-item short">
+                        <label for="">验证码</label>
+                        <div class="last">
+                            <input name="tbyzm" type="text" maxlength="5" id="tbyzm" placeholder="输入验证码"
+                                autocomplete="off">
+                            <script>var numkey = Math.random();
+                                numkey = Math.round(numkey * 10000);
+                            </script>
+                            <img src="images.jpg" alt="图片看不清？点击重新得到验证码" style="cursor:pointer;" hspace="4">
+                            <span id="RequiredFieldValidator6"
+                                style="color:Red;font-size:12pt;display:none;">*请输入验证码</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-submit">
+                    <input type="submit" name="Button1" value="查 询" id="Button1" class="btn">
+                </div>
+                <script>
+                    var btn=document.getElementById("Button1");
+                    var ksh= document.getElementById("tbksh");
+                    var zjh= document.getElementById("tbzjh");
+                    var sjdxmm= document.getElementById("tbsjdxmm");
+                    var yzm= document.getElementById("tbyzm");
+                    btn.addEventListener('click',function(){
+                       if(ksh.value=='123'&&zjh.value=='123'&&sjdxmm.value=='123'&&yzm.value=='123')
+                       {
+                            
+                            window.open("./index.html","_self");
+                            alert('正在查询')
+                            console.log('hello')
+                       }
+                       else
+                       {
+                            if(yzm.value!='123')    
+                            {
+                                alert('验证码输入有误，请重新输入');
+                            }
+                            else
+                            {
+                                alert('考生信息有误，请重新输入')
+                            }
+                        }
+                    })
+                    // btn.onclick = function () {
+                    //    // window.location.href = "http://lazitech.github.io";
+                  
+                    // }
+        
+                </script>
+
+                <div class="txt_tip">
+                    <dl>
+                        <dt>温馨提示</dt>
+                        <dd>1、查询时间为每天7：00-21：00。</dd>
+                        <dd>2、“手机短信密码”为登录山东省2023年普通高等学校招生考试信息平台（<a href="https://wsbm.sdzk.cn"
+                                target="_blank">https://wsbm.sdzk.cn</a>）的手机短信密码，考生忘记可通过平台找回。</dd>
+                        <dd>3、本专科学生资助政策查询请前往山东省学生资助管理中心官方网站（<a href="https://sdxszz.sdei.edu.cn/"
+                                target="_blank">https://sdxszz.sdei.edu.cn/</a>）。</dd>
+                        <dd style="color:red;">4、<a href="https://www.sdzk.cn/NewsInfo.aspx?NewsID=6264" target="_blank"
+                                style="color:red;">山东省2023年普通高校招生录取结果查询方式和查询时间公告。</a></dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copy" style="color: #333;">
+            版权所有：山东省教育招生考试院
+            <div>
+                <a href="https://beian.miit.gov.cn" style="display: inline-block; text-decoration: none;"
+                    target="_blank">鲁ICP备15041457号</a> <a target="_blank"
+                    href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37010202001292"
+                    style="display: inline-block; text-decoration: none; height: 20px; line-height: 20px; margin-left: 20px;">
+                    <img src="beian.png" style="float: left;">鲁公网安备 37010202001292号</a>
+            </div>
+        </div>
+
+
+    </form>
+
+
+</body>
+
+</html>
